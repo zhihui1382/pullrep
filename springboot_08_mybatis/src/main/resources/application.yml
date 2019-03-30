@@ -1,0 +1,14 @@
+spring:
+  #配置数据库连接信息
+  datasource:
+    url: jdbc:mysql://localhost:3306/car
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    #配置数据库连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  #加载mybatis的映射文件
+  mapper-locations: classpath:mybatis/**.xml
+  
